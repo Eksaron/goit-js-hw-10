@@ -1,23 +1,44 @@
-<h2>Завдання 2 - Генератор промісів</h2>
-<form class="form">
-  <label>
-    Delay (ms)
-    <input type="number" name="delay" id="inputDelay" value="1000" required />
-  </label>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <button type="button">
+        <a href="./index.html">&lt;&lt; BACK</a>
+      </button>
+    </div>
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input
+          type="number"
+          name="delay"
+          id="inputDelay"
+          value="1000"
+          required
+        />
+      </label>
 
-  <fieldset>
-    <legend>State</legend>
-    <label>
-      <input type="radio" name="state" value="fulfilled" required />
-      Fulfilled
-    </label>
-    <label>
-      <input type="radio" name="state" value="rejected" required />
-      Rejected
-    </label>
-  </fieldset>
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
 
-  <button type="submit">Create notification</button>
-</form>
+      <button type="submit">Create notification</button>
+    </form>
 
-<script type="module" src="./js/2-snackbar.js"></script>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
